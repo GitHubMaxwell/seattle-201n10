@@ -81,13 +81,28 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
+//have to for loop it array.length
+
 function sumArray(testArray) {
   //eslint-disable-line
-}
+  var numArray = [];
+  /* create a variable that pulls two values from the testArray AND sends them in a function call to the sum function to be added together and return only the
 
+//need to take two values from the array, create a variable pass the to the sum function to be added together, get back that info, add that to
+*/
+
+  for (var i = 0; i < testArray.length; i++) {
+    var sumOfArray = sum(testArray[0], testArray[1])[0]; //change so that its index i
+    var sumOfArray2 = sum(sumOfArray, testArray[1])[0]; //redines varable by adding the previous sum to the next number in the array
+    var sumAll = sumOfArray + sumAll;
+  }
+  numArray.push(sumOfArray2, testArray[0] + ' ' + testArray[1] + ' ' + testArray[2] + ' was passed in as an array of numbers, and ' + sumOfArray + ' is their sum.'); //change so that its index i to be dynamic if the array size changes
+  console.log(numArray);
+  return numArray;
+}
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
