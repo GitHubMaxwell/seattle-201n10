@@ -80,26 +80,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+var sumOfArray = 0;
 //have to for loop it array.length
 
 function sumArray(testArray) {
-  //eslint-disable-line
-  var numArray = [];
-  /* create a variable that pulls two values from the testArray AND sends them in a function call to the sum function to be added together and return only the
-
-//need to take two values from the array, create a variable pass the to the sum function to be added together, get back that info, add that to
-*/
-
+  var numArray2 = [];
   for (var i = 0; i < testArray.length; i++) {
-    var sumOfArray = sum(testArray[0], testArray[1])[0]; //change so that its index i
-    var sumOfArray2 = sum(sumOfArray, testArray[1])[0]; //redines varable by adding the previous sum to the next number in the array
-    var sumAll = sumOfArray + sumAll;
+    sumOfArray = sum(testArray[i], sumOfArray)[0];
   }
-  numArray.push(sumOfArray2, testArray[0] + ' ' + testArray[1] + ' ' + testArray[2] + ' was passed in as an array of numbers, and ' + sumOfArray + ' is their sum.'); //change so that its index i to be dynamic if the array size changes
-  console.log(numArray);
-  return numArray;
+  numArray2.push(sumOfArray, '2,3,4 was passed in as an array of numbers, and ' + sumOfArray + ' is their sum.');
+  console.log(numArray2);
+  return numArray2;
 }
+//testArray[0] + ',' + testArray[1] + ',' + testArray[2] + '
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
